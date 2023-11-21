@@ -39,3 +39,7 @@ def post_detail(request, slug):
         logger.info(
     "Created comment on Post %d for user %s", post.pk, request.user
 )
+
+def get_ip(request):
+  from django.http import HttpResponse
+  return HttpResponse(request.META['REMOTE_ADDR'])
