@@ -1,7 +1,7 @@
 from rest_framework import generics
 from blog.api.permissions import AuthorModifyOrReadOnly,IsAdminUserForObject
 from django.contrib.auth.models import User
-from blog.api.serializers import PostSerializer, UserSerializer
+from blog.api.serializers import PostSerializer, UserSerializer,PostDetailSerializer
 from blog.models import Post
 
 
